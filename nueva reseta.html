@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--pruebas 12-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FUENTE 1-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+     <!--FUENTE 2-->
+     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700|Roboto&display=swap" rel="stylesheet">
+     <!--FUENTE 3-->
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Teko:wght@300;400;500;600;700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+     <!--FUENTE 4-->
+     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--ICONOS-->
+    
+    <link rel="stylesheet" href="css/icon-font.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700">
+   
+   <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+   <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Cocina mejor</title>
+    </head>
+    <body>
+       
+        
+     <!--HEADER-->
+     <header class="encabezado">
+        <div class="encabezado__caja-texto">
+               <h1 class="encabezado-banner-1">
+                 <span class="encabezado-banner-1--tercero">Cocina Mejor</span>
+                 <span class="encabezado-banner-1--secundario"> rico, facil y sencillo</span>
+               </h1>
+            </div>
+        <div class="encabezado__caja-buscador">
+           <input type="checkbox" id="search-switch">
+           <label for="search-switch" class="etiqueta">
+             <span class="material-icons search-icon">
+               search
+             </span>
+             <input type="text" id="search-input">
+             <span class="material-icons close-icon">
+               close
+             </span>
+           </label>
+        </div>
+   </header>
+           
+    
+     <div class="u-texto-centrado">
+        <h2 class="encabezado-primero">
+        El sabor de la buena ensalada
+        </h2>
+    </div>
+    <div class="flex-container" id="mensaje">
+    <div class="flex-item flex-item--mensaje" id="mostrar"></div> 
+     </div>
+     <div class="flex-container">
+           <form action="" class="form" id="recetas">
+             <div class="flex-container" > 
+               <div class="flex-item flex-item--formulario">
+                    <div class="formulario">
+                        <input type="text" class="formulario__input" placeholder="Nombre completo"  name="ensalada" id="ensalada">
+                        <input type="file" id="file" name="archivo" class="">
+                    </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="tomate" id="checkbox1" >
+                    <label for="checkbox1" >Tomate</label>
+                <div class="cantidad">
+                    <input type="number"  name="cantidadtomate" min="1" max="1000" id="tomate">
+               </div>
+               <div class="select"  name="medida-tomate">
+                <select name="medidatomate"  id="medida-tomate" >
+                   <option selected disabled>Medida</option>
+                   <option value="ml">ml</option>
+                   <option value="g">g</option>
+                   <option value="unidad">unidad</option>
+                   <option value="cucharada">cucharada</option>
+               </select>
+            </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="lechuga" id="checkbox2">
+                    <label for="checkbox2" >Lechuga</label>
+                    <div class="cantidad">
+                        <input type="number"  name="cantidadlechuga" min="1" max="1000" id="lechuga">
+                   </div>
+                   <div class="select"  name="medida-lechuga">
+                    <select name="medidalechuga"  id="medida-lechuga">
+                       <option selected disabled>Medida</option>
+                       <option value="ml">ml</option>
+                       <option value="g">g</option>
+                       <option value="unidad">unidad</option>
+                       <option value="cucharada">cucharada</option>
+                   </select>
+                </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="zanahoria" id="checkbox3">
+                    <label for="checkbox3" >Zanahoria</label>
+                    <div class="cantidad">
+                        <input type="number"  name="cantidadzanahoria" min="1" max="1000" id="zanahoria">
+                   </div>
+                    <div class="select"  name="medida-zanahoria">
+                        <select name="medidazanahoria"  id="medida-zanahoria">
+                           <option selected disabled>Medida</option>
+                           <option value="ml">ml</option>
+                           <option value="g">g</option>
+                           <option value="unidad">unidad</option>
+                           <option value="cucharada">cucharada</option>
+                       </select>
+                     </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="pepino" id="checkbox4">
+                    <label for="checkbox4" >Pepino</label>
+                    <div class="cantidad">
+                        <input type="number"  name="cantidadpepino" min="1" max="1000" id="pepino">
+                   </div>
+                   <div class="select"  name="medida-pepino">
+                    <select name="medidapepino"  id="medida-pepino" >
+                       <option selected disabled>Medida</option>
+                       <option value="ml">ml</option>
+                       <option value="g">g</option>
+                       <option value="unidad">unidad</option>
+                       <option value="cucharada">cucharada</option>
+                   </select>
+                  </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="pepinillo" id="checkbox5">
+                    <label for="checkbox5" >Pepinillo</label>
+                    <div class="cantidad">
+                        <input type="number"  name="cantidadpepinillo" min="1" max="1000" id="pepinillo">
+                   </div>
+                   <div class="select"  name="medidapepinillo">
+                    <select name="medidapepinillo"  id="medida-pepinillo">
+                       <option selected disabled>Medida</option>
+                       <option value="ml">ml</option>
+                       <option value="g">g</option>
+                       <option value="unidad">unidad</option>
+                       <option value="cucharada">cucharada</option>
+                   </select>
+                </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="aceitunas" id="checkbox6">
+                          <label for="checkbox6" >Aceitunas Negras</label>
+                          <div class="cantidad">
+                            <input type="number"  name="cantidadaceitunasnegras" min="1" max="1000" id="aceitunas-negras">
+                       </div>
+                       <div class="select"  name="medida-aceitunas-negras">
+                        <select name="medidaaceitunasnegras"  id="medida-aceitunas-negras" >
+                           <option selected disabled>Medida</option>
+                           <option value="ml">ml</option>
+                           <option value="g">g</option>
+                           <option value="unidad">unidad</option>
+                           <option value="cucharada">cucharada</option>
+                       </select>
+                    </div>
+                </div>
+                
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="quesocabra" id="checkbox8">
+                    <label for="checkbox8" >Queso cabra</label>
+                    <div class="cantidad">
+                        <input type="number"  name="cantidadquesocabra" min="1" max="1000" id="quesocabra">
+                   </div>
+                   <div class="select"  name="medida-quesocabra">
+                    <select name="medidaquesocabra"  id="medida-quesocabra" >
+                       <option selected disabled>Medida</option>
+                       <option value="ml">ml</option>
+                       <option value="g">g</option>
+                       <option value="unidad">unidad</option>
+                       <option value="cucharada">cucharada</option>
+                   </select>
+                  </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="quesobufala" id="checkbox9" >
+                    <label for="checkbox9" >Queso Bufala</label>
+                <div class="cantidad">
+                    <input type="number"  name="cantidadquesobufala" min="1" max="1000" id="quesobufala">
+               </div>
+               <div class="select"  name="medida-quesobufala">
+                <select name="medidaquesobufala"  id="medida-quesobufala" >
+                   <option selected disabled>Medida</option>
+                   <option value="ml">ml</option>
+                   <option value="g">g</option>
+                   <option value="unidad">unidad</option>
+                   <option value="cucharada">cucharada</option>
+               </select>
+            </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="beicon" id="checkbox10">
+                    <label for="checkbox10" >Beicon</label>
+                    <div class="cantidad">
+                        <input type="number"  name="cantidadbeicon" min="1" max="1000" id="beicon">
+                   </div>
+                   <div class="select"  name="medida-beicon">
+                    <select name="medidabeicon"  id="medida-beicon">
+                       <option selected disabled>Medida</option>
+                       <option value="ml">ml</option>
+                       <option value="g">g</option>
+                       <option value="unidad">unidad</option>
+                       <option value="cucharada">cucharada</option>
+                   </select>
+                </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="frutoscecos" id="checkbox11">
+                    <label for="checkbox11" >Frutos Cecos</label>
+                    <div class="cantidad">
+                        <input type="number"  name="cantidadfrutoscecos" min="1" max="1000" id="frutoscecos">
+                   </div>
+                    <div class="select"  name="medida-frutoscecos">
+                        <select name="medidafrutoscecos"  id="medida-frutoscecos">
+                           <option selected disabled>Medida</option>
+                           <option value="ml">ml</option>
+                           <option value="g">g</option>
+                           <option value="unidad">unidad</option>
+                           <option value="cucharada">cucharada</option>
+                       </select>
+                     </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="cebolla" id="checkbox12">
+                    <label for="checkbox12" >Cebolla</label>
+                    <div class="cantidad">
+                        <input type="number"  name="cantidadcebolla" min="1" max="1000" id="cebolla">
+                   </div>
+                   <div class="select"  name="medida-cebolla">
+                    <select name="medidacebolla"  id="medida-cebolla" >
+                       <option selected disabled>Medida</option>
+                       <option value="ml">ml</option>
+                       <option value="g">g</option>
+                       <option value="unidad">unidad</option>
+                       <option value="cucharada">cucharada</option>
+                   </select>
+                  </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="quesofeta" id="checkbox13" >
+                    <label for="checkbox13" >Queso Feta</label>
+                <div class="cantidad">
+                    <input type="number"  name="cantidadquesofeta" min="1" max="1000" id="quesofeta">
+               </div>
+               <div class="select"  name="medida-quesofeta">
+                <select name="medidaquesofeta"  id="medida-quesofeta" >
+                   <option selected disabled>Medida</option>
+                   <option value="ml">ml</option>
+                   <option value="g">g</option>
+                   <option value="unidad">unidad</option>
+                   <option value="cucharada">cucharada</option>
+               </select>
+            </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="maiz" id="checkbox14">
+                    <label for="checkbox14" >Maiz</label>
+                    <div class="cantidad">
+                        <input type="number"  name="cantidadmaiz" min="1" max="1000" id="maiz">
+                   </div>
+                   <div class="select"  name="medida-maiz">
+                    <select name="medidamaiz"  id="medida-maiz">
+                       <option selected disabled>Medida</option>
+                       <option value="ml">ml</option>
+                       <option value="g">g</option>
+                       <option value="unidad">unidad</option>
+                       <option value="cucharada">cucharada</option>
+                   </select>
+                </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="pimiento" id="checkbox15">
+                    <label for="checkbox15" >Pimiento</label>
+                    <div class="cantidad">
+                        <input type="number"  name="cantidadpimiento" min="1" max="1000" id="pimiento">
+                   </div>
+                    <div class="select"  name="medida-pimiento">
+                        <select name="medidapimiento"  id="medida-pimiento">
+                           <option selected disabled>Medida</option>
+                           <option value="ml">ml</option>
+                           <option value="g">g</option>
+                           <option value="unidad">unidad</option>
+                           <option value="cucharada">cucharada</option>
+                       </select>
+                     </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="quesocapress" id="checkbox16">
+                    <label for="checkbox16" >Queso Capress</label>
+                    <div class="cantidad">
+                        <input type="number"  name="cantidadquesocapress" min="1" max="1000" id="quesocapress">
+                   </div>
+                   <div class="select"  name="medida-quesocapress">
+                    <select name="medidaquesocapress"  id="medida-quesocapress" >
+                       <option selected disabled>Medida</option>
+                       <option value="ml">ml</option>
+                       <option value="g">g</option>
+                       <option value="unidad">unidad</option>
+                       <option value="cucharada">cucharada</option>
+                   </select>
+                  </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="albahaca" id="checkbox17" >
+                    <label for="checkbox17" >Albahaca</label>
+                <div class="cantidad">
+                    <input type="number"  name="cantidadalbahaca" min="1" max="1000" id="albahaca">
+               </div>
+               <div class="select"  name="medida-albahaca">
+                <select name="medidaalbahaca"  id="medida-albahaca" >
+                   <option selected disabled>Medida</option>
+                   <option value="ml">ml</option>
+                   <option value="g">g</option>
+                   <option value="unidad">unidad</option>
+                   <option value="cucharada">cucharada</option>
+               </select>
+            </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="oregano" id="checkbox18">
+                    <label for="checkbox18" >Oregano</label>
+                    <div class="cantidad">
+                        <input type="number"  name="cantidadoregano" min="1" max="1000" id="oregano">
+                   </div>
+                   <div class="select"  name="medida-oregano">
+                    <select name="medidaoregano"  id="medida-oregano">
+                       <option selected disabled>Medida</option>
+                       <option value="ml">ml</option>
+                       <option value="g">g</option>
+                       <option value="unidad">unidad</option>
+                       <option value="cucharada">cucharada</option>
+                   </select>
+                </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="atun" id="checkbox19">
+                    <label for="checkbox19" >Atún</label>
+                    <div class="cantidad">
+                        <input type="number"  name="cantidadatun" min="1" max="1000" id="atun">
+                   </div>
+                    <div class="select"  name="medida-atun">
+                        <select name="medidaatun"  id="medida-atun">
+                           <option selected disabled>Medida</option>
+                           <option value="ml">ml</option>
+                           <option value="g">g</option>
+                           <option value="unidad">unidad</option>
+                           <option value="cucharada">cucharada</option>
+                       </select>
+                     </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="huevococido" id="checkbox20">
+                    <label for="checkbox20" >Huevo Cocido</label>
+                    <div class="cantidad">
+                        <input type="number"  name="cantidadhuevococido" min="1" max="1000" id="huevococido">
+                   </div>
+                   <div class="select"  name="medida-huevococido">
+                    <select name="medidahuevococido"  id="medida-huevococido" >
+                       <option selected disabled>Medida</option>
+                       <option value="ml">ml</option>
+                       <option value="g">g</option>
+                       <option value="unidad">unidad</option>
+                       <option value="cucharada">cucharada</option>
+                   </select>
+                  </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="quesoburrata" id="checkbox21">
+                    <label for="checkbox21" >Queso Burrata</label>
+                    <div class="cantidad">
+                        <input type="number"  name="cantidadquesoburrata" min="1" max="1000" id="quesoburrata">
+                   </div>
+                   <div class="select"  name="medidaquesoburrata">
+                    <select name="medidaquesoburrata"  id="medida-quesoburrata">
+                       <option selected disabled>Medida</option>
+                       <option value="ml">ml</option>
+                       <option value="g">g</option>
+                       <option value="unidad">unidad</option>
+                       <option value="cucharada">cucharada</option>
+                   </select>
+                </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="pesto" id="checkbox22">
+                          <label for="checkbox22" >Pesto </label>
+                          <div class="cantidad">
+                            <input type="number"  name="cantidadpesto" min="1" max="1000" id="pesto">
+                       </div>
+                       <div class="select"  name="medida-pesto">
+                        <select name="medidapesto"  id="medida-pesto" >
+                           <option selected disabled>Medida</option>
+                           <option value="ml">ml</option>
+                           <option value="g">g</option>
+                           <option value="unidad">unidad</option>
+                           <option value="cucharada">cucharada</option>
+                       </select>
+                    </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="tosatadas" id="checkbox23">
+                    <label for="checkbox23" >Tostadas</label>
+                    <div class="cantidad">
+                        <input type="number"  name="cantidadtosatadas" min="1" max="1000" id="tosatadas">
+                   </div>
+                    <div class="select"  name="medida-tosatadas">
+                        <select name="medidatosatadas"  id="medida-tosatadas">
+                           <option selected disabled>Medida</option>
+                           <option value="ml">ml</option>
+                           <option value="g">g</option>
+                           <option value="unidad">unidad</option>
+                           <option value="cucharada">cucharada</option>
+                       </select>
+                     </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="platano" id="checkbox24">
+                    <label for="checkbox24" >Banana</label>
+                    <div class="cantidad">
+                        <input type="number"  name="cantidadplatano" min="1" max="1000" id="platano">
+                   </div>
+                   <div class="select"  name="medida-platano">
+                    <select name="medidaplatano"  id="medida-platano" >
+                       <option selected disabled>Medida</option>
+                       <option value="ml">ml</option>
+                       <option value="g">g</option>
+                       <option value="unidad">unidad</option>
+                       <option value="cucharada">cucharada</option>
+                   </select>
+                  </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="Kiwi" id="checkbox25" >
+                    <label for="checkbox25" >Kiwi</label>
+                <div class="cantidad">
+                    <input type="number"  name="cantidadKiwi" min="1" max="1000" id="Kiwi">
+               </div>
+               <div class="select"  name="medida-Kiwi">
+                <select name="medidaKiwi"  id="medida-Kiwi" >
+                   <option selected disabled>Medida</option>
+                   <option value="ml">ml</option>
+                   <option value="g">g</option>
+                   <option value="unidad">unidad</option>
+                   <option value="cucharada">cucharada</option>
+               </select>
+            </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="manzana" id="checkbox26">
+                    <label for="checkbox26" >Manzana</label>
+                    <div class="cantidad">
+                        <input type="number"  name="cantidadmanzana" min="1" max="1000" id="manzana">
+                   </div>
+                   <div class="select"  name="medida-manzana">
+                    <select name="medidamanzana"  id="medida-manzana">
+                       <option selected disabled>Medida</option>
+                       <option value="ml">ml</option>
+                       <option value="g">g</option>
+                       <option value="unidad">unidad</option>
+                       <option value="cucharada">cucharada</option>
+                   </select>
+                </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="pollo" id="checkbox27">
+                    <label for="checkbox27" >Pollo</label>
+                    <div class="cantidad">
+                        <input type="number"  name="cantidadpollo" min="1" max="1000" id="pollo">
+                   </div>
+                    <div class="select"  name="medida-pollo">
+                        <select name="medidapollo"  id="medida-pollo">
+                           <option selected disabled>Medida</option>
+                           <option value="ml">ml</option>
+                           <option value="g">g</option>
+                           <option value="unidad">unidad</option>
+                           <option value="cucharada">cucharada</option>
+                       </select>
+                     </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="salsarosa" id="checkbox28">
+                    <label for="checkbox28" >Salsa Rosa</label>
+                    <div class="cantidad">
+                        <input type="number"  name="cantidadsalsarosa" min="1" max="1000" id="salsarosa">
+                   </div>
+                   <div class="select"  name="medida-salsarosa">
+                    <select name="medidasalsarosa"  id="medida-salsarosa" >
+                       <option selected disabled>Medida</option>
+                       <option value="ml">ml</option>
+                       <option value="g">g</option>
+                       <option value="unidad">unidad</option>
+                       <option value="cucharada">cucharada</option>
+                   </select>
+                  </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="salsacesar" id="checkbox29" >
+                    <label for="checkbox29" >Salsa Cesar</label>
+                <div class="cantidad">
+                    <input type="number"  name="cantidadsalsacesar" min="1" max="1000" id="salsacesar">
+               </div>
+               <div class="select"  name="medida-salsacesar">
+                <select name="medidasalsacesar"  id="medida-salsacesar" >
+                   <option selected disabled>Medida</option>
+                   <option value="ml">ml</option>
+                   <option value="g">g</option>
+                   <option value="unidad">unidad</option>
+                   <option value="cucharada">cucharada</option>
+               </select>
+            </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="salsabalzamica" id="checkbox30">
+                    <label for="checkbox30" >Salsa Balzamica</label>
+                    <div class="cantidad">
+                        <input type="number"  name="cantidadsalsabalzamica" min="1" max="1000" id="salsabalzamica">
+                   </div>
+                   <div class="select"  name="medida-salsabalzamica">
+                    <select name="medidasalsabalzamica"  id="medida-salsabalzamica">
+                       <option selected disabled>Medida</option>
+                       <option value="ml">ml</option>
+                       <option value="g">g</option>
+                       <option value="unidad">unidad</option>
+                       <option value="cucharada">cucharada</option>
+                   </select>
+                </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="salsayogurt" id="checkbox31">
+                    <label for="checkbox31" >Salsa Yogurt</label>
+                    <div class="cantidad">
+                        <input type="number"  name="cantidadsalsayogurt" min="1" max="1000" id="salsayogurt">
+                   </div>
+                    <div class="select"  name="medida-salsayogurt">
+                        <select name="medidasalsayogurt"  id="medida-salsayogurt">
+                           <option selected disabled>Medida</option>
+                           <option value="ml">ml</option>
+                           <option value="g">g</option>
+                           <option value="unidad">unidad</option>
+                           <option value="cucharada">cucharada</option>
+                       </select>
+                     </div>
+                </div>
+                <div class="flex-item flex-item--formulario">
+                    <input type="checkbox"  name="aguacate" id="checkbox32">
+                    <label for="checkbox32" >Aguacate</label>
+                    <div class="cantidad">
+                        <input type="number"  name="cantidadaguacate" min="1" max="1000" id="aguacate">
+                   </div>
+                   <div class="select"  name="medida-aguacate">
+                    <select name="medidaaguacate"  id="medida-aguacate" >
+                       <option selected disabled>Medida</option>
+                       <option value="ml">ml</option>
+                       <option value="g">g</option>
+                       <option value="unidad">unidad</option>
+                       <option value="cucharada">cucharada</option>
+                   </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="submit"  class="btn btn--gris">Enviar</button>
+           </form>
+       </div> 
+       <div class="flex-container" id="imprimir"></div>
+     
+      <div class="flex-container">
+         <div class="flex-item flex-item--slider-bajo">
+            <div class="conteiner u-margen-abajo-grande">
+               <input type="radio" name="slider-show" id="slide-show-1" checked>
+               <input type="radio" name="slider-show" id="slide-show-2">
+               <input type="radio" name="slider-show" id="slide-show-3">
+               <input type="radio" name="slider-show" id="slide-show-4">
+               <div class="slides-show">
+               <div class="oculto">
+                   <div class="ancho">
+                       <div class="slide-show slide-show_1">
+                           <section class="section-turismo" id="section-turismo">
+                              <div class="flex-container">
+                               <div class="flex-item--tarjetas-slider-abajo">
+                                  <div class="tarjeta">
+                                      <div class="tarjeta__lado tarjeta__lado--frente">
+                                           <div class="tarjeta__imagen tarjeta__imagen--1">
+                                               &nbsp;
+                                           </div>
+                                           <h4 class="tarjeta__encabezado">
+                                               <span class="tarjeta__encabezado-span tarjeta__encabezado-span--1">Entrantes</span>
+                                           </h4>
+                                          
+                                      </div>
+                                      <div class="tarjeta__lado tarjeta__lado--atras tarjeta__lado--atras-1">
+                                           <div class="tarjeta__cta">
+                                               <div class="tarjeta__detalles">
+                                                   <ul>
+                                                       <li>3 day tours</li>
+                                                       <li>Up to 30 people</li>
+                                                       <li>2 tour guides</li>
+                                                       <li>Sleep in cozy hotels</li>
+                                                       <li>Difficulty: easy</li>
+                                                   </ul>
+                                               </div>
+                                               <a href="#ventana" class="btn btn--blanco">Click!</a>
+                                           </div>
+                                       </div>
+                                  </div>
+                               </div>
+                               <div class="flex-item--tarjetas-slider-abajo">
+                                   <div class="tarjeta">
+                                       <div class="tarjeta__lado tarjeta__lado--frente">
+                                            <div class="tarjeta__imagen tarjeta__imagen--2">
+                                                &nbsp;
+                                            </div>
+                                            <h4 class="tarjeta__encabezado">
+                                                <span class="tarjeta__encabezado-span tarjeta__encabezado-span--2">Ensaladas</span>
+                                            </h4>
+                                            
+                                       </div>
+                                       <div class="tarjeta__lado tarjeta__lado--atras tarjeta__lado--atras-2">
+                                            <div class="tarjeta__cta">
+                                               <div class="tarjeta__detalles">
+                                                   <ul>
+                                                       <li>3 day tours</li>
+                                                       <li>Up to 30 people</li>
+                                                       <li>2 tour guides</li>
+                                                       <li>Sleep in cozy hotels</li>
+                                                       <li>Difficulty: easy</li>
+                                                   </ul>
+                                               </div>
+                                                <a href="#ventana" class="btn btn--blanco">Book now!</a>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
+                                <div class="flex-item--tarjetas-slider-abajo">
+                                   <div class="tarjeta">
+                                       <div class="tarjeta__lado tarjeta__lado--frente">
+                                            <div class="tarjeta__imagen tarjeta__imagen--3">
+                                                &nbsp;
+                                            </div>
+                                            <h4 class="tarjeta__encabezado">
+                                                <span class="tarjeta__encabezado-span tarjeta__encabezado-span--3">Pizzas</span>
+                                            </h4>
+                                            <div class="tarjeta__detalles">
+                                                <ul>
+                                                    <li>3 day tours</li>
+                                                    <li>Up to 30 people</li>
+                                                    <li>2 tour guides</li>
+                                                    <li>Sleep in cozy hotels</li>
+                                                    <li>Difficulty: easy</li>
+                                                </ul>
+                                            </div>
+                                       </div>
+                                       <div class="tarjeta__lado tarjeta__lado--atras tarjeta__lado--atras-3">
+                                            <div class="tarjeta__cta">
+                                               <div class="tarjeta__detalles">
+                                                   <ul>
+                                                       <li>3 day tours</li>
+                                                       <li>Up to 30 people</li>
+                                                       <li>2 tour guides</li>
+                                                       <li>Sleep in cozy hotels</li>
+                                                       <li>Difficulty: easy</li>
+                                                   </ul>
+                                               </div>
+                                                <a href="#ventana" class="btn btn--blanco">Book now!</a>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
+                           </div>
+                           </section>
+                        </div>
+                        <div class="slide-show slide-show_2">
+                           <section class="section-turismo" id="section-turismo">
+                               <div class="flex-container">
+                                <div class="flex-item--tarjetas-slider-abajo">
+                                   <div class="tarjeta">
+                                       <div class="tarjeta__lado tarjeta__lado--frente">
+                                            <div class="tarjeta__imagen tarjeta__imagen--1">
+                                                &nbsp;
+                                            </div>
+                                            <h4 class="tarjeta__encabezado">
+                                                <span class="tarjeta__encabezado-span tarjeta__encabezado-span--1">Entrantes</span>
+                                            </h4>
+                                           
+                                       </div>
+                                       <div class="tarjeta__lado tarjeta__lado--atras tarjeta__lado--atras-1">
+                                            <div class="tarjeta__cta">
+                                                <div class="tarjeta__detalles">
+                                                    <ul>
+                                                        <li>3 day tours</li>
+                                                        <li>Up to 30 people</li>
+                                                        <li>2 tour guides</li>
+                                                        <li>Sleep in cozy hotels</li>
+                                                        <li>Difficulty: easy</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#ventana" class="btn btn--blanco">Book now!</a>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
+                                <div class="flex-item--tarjetas-slider-abajo">
+                                    <div class="tarjeta">
+                                        <div class="tarjeta__lado tarjeta__lado--frente">
+                                             <div class="tarjeta__imagen tarjeta__imagen--2">
+                                                 &nbsp;
+                                             </div>
+                                             <h4 class="tarjeta__encabezado">
+                                                 <span class="tarjeta__encabezado-span tarjeta__encabezado-span--2">Ensaladas</span>
+                                             </h4>
+                                             
+                                        </div>
+                                        <div class="tarjeta__lado tarjeta__lado--atras tarjeta__lado--atras-2">
+                                             <div class="tarjeta__cta">
+                                                <div class="tarjeta__detalles">
+                                                    <ul>
+                                                        <li>3 day tours</li>
+                                                        <li>Up to 30 people</li>
+                                                        <li>2 tour guides</li>
+                                                        <li>Sleep in cozy hotels</li>
+                                                        <li>Difficulty: easy</li>
+                                                    </ul>
+                                                </div>
+                                                 <a href="#ventana" class="btn btn--blanco">Book now!</a>
+                                             </div>
+                                         </div>
+                                    </div>
+                                 </div>
+                                 <div class="flex-item--tarjetas-slider-abajo">
+                                    <div class="tarjeta">
+                                        <div class="tarjeta__lado tarjeta__lado--frente">
+                                             <div class="tarjeta__imagen tarjeta__imagen--3">
+                                                 &nbsp;
+                                             </div>
+                                             <h4 class="tarjeta__encabezado">
+                                                 <span class="tarjeta__encabezado-span tarjeta__encabezado-span--3">Pizzas</span>
+                                             </h4>
+                                             <div class="tarjeta__detalles">
+                                                 <ul>
+                                                     <li>3 day tours</li>
+                                                     <li>Up to 30 people</li>
+                                                     <li>2 tour guides</li>
+                                                     <li>Sleep in cozy hotels</li>
+                                                     <li>Difficulty: easy</li>
+                                                 </ul>
+                                             </div>
+                                        </div>
+                                        <div class="tarjeta__lado tarjeta__lado--atras tarjeta__lado--atras-3">
+                                             <div class="tarjeta__cta">
+                                                <div class="tarjeta__detalles">
+                                                    <ul>
+                                                        <li>3 day tours</li>
+                                                        <li>Up to 30 people</li>
+                                                        <li>2 tour guides</li>
+                                                        <li>Sleep in cozy hotels</li>
+                                                        <li>Difficulty: easy</li>
+                                                    </ul>
+                                                </div>
+                                                 <a href="#ventana" class="btn btn--blanco">Book now!</a>
+                                             </div>
+                                         </div>
+                                    </div>
+                                 </div>
+                            </div>
+                            </section>
+                        </div>
+                        <div class="slide-show slide-show_3">
+                           <section class="section-turismo" id="section-turismo">
+                               <div class="flex-container">
+                                <div class="flex-item--tarjetas-slider-abajo">
+                                   <div class="tarjeta">
+                                       <div class="tarjeta__lado tarjeta__lado--frente">
+                                            <div class="tarjeta__imagen tarjeta__imagen--1">
+                                                &nbsp;
+                                            </div>
+                                            <h4 class="tarjeta__encabezado">
+                                                <span class="tarjeta__encabezado-span tarjeta__encabezado-span--1">Entrantes</span>
+                                            </h4>
+                                           
+                                       </div>
+                                       <div class="tarjeta__lado tarjeta__lado--atras tarjeta__lado--atras-1">
+                                            <div class="tarjeta__cta">
+                                                <div class="tarjeta__detalles">
+                                                    <ul>
+                                                        <li>3 day tours</li>
+                                                        <li>Up to 30 people</li>
+                                                        <li>2 tour guides</li>
+                                                        <li>Sleep in cozy hotels</li>
+                                                        <li>Difficulty: easy</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#ventana" class="btn btn--blanco">Book now!</a>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
+                                <div class="flex-item--tarjetas-slider-abajo">
+                                    <div class="tarjeta">
+                                        <div class="tarjeta__lado tarjeta__lado--frente">
+                                             <div class="tarjeta__imagen tarjeta__imagen--2">
+                                                 &nbsp;
+                                             </div>
+                                             <h4 class="tarjeta__encabezado">
+                                                 <span class="tarjeta__encabezado-span tarjeta__encabezado-span--2">Ensaladas</span>
+                                             </h4>
+                                             
+                                        </div>
+                                        <div class="tarjeta__lado tarjeta__lado--atras tarjeta__lado--atras-2">
+                                             <div class="tarjeta__cta">
+                                                <div class="tarjeta__detalles">
+                                                    <ul>
+                                                        <li>3 day tours</li>
+                                                        <li>Up to 30 people</li>
+                                                        <li>2 tour guides</li>
+                                                        <li>Sleep in cozy hotels</li>
+                                                        <li>Difficulty: easy</li>
+                                                    </ul>
+                                                </div>
+                                                 <a href="#ventana" class="btn btn--blanco">Book now!</a>
+                                             </div>
+                                         </div>
+                                    </div>
+                                 </div>
+                                 <div class="flex-item--tarjetas-slider-abajo">
+                                    <div class="tarjeta">
+                                        <div class="tarjeta__lado tarjeta__lado--frente">
+                                             <div class="tarjeta__imagen tarjeta__imagen--3">
+                                                 &nbsp;
+                                             </div>
+                                             <h4 class="tarjeta__encabezado">
+                                                 <span class="tarjeta__encabezado-span tarjeta__encabezado-span--3">Pizzas</span>
+                                             </h4>
+                                             <div class="tarjeta__detalles">
+                                                 <ul>
+                                                     <li>3 day tours</li>
+                                                     <li>Up to 30 people</li>
+                                                     <li>2 tour guides</li>
+                                                     <li>Sleep in cozy hotels</li>
+                                                     <li>Difficulty: easy</li>
+                                                 </ul>
+                                             </div>
+                                        </div>
+                                        <div class="tarjeta__lado tarjeta__lado--atras tarjeta__lado--atras-3">
+                                             <div class="tarjeta__cta">
+                                                <div class="tarjeta__detalles">
+                                                    <ul>
+                                                        <li>3 day tours</li>
+                                                        <li>Up to 30 people</li>
+                                                        <li>2 tour guides</li>
+                                                        <li>Sleep in cozy hotels</li>
+                                                        <li>Difficulty: easy</li>
+                                                    </ul>
+                                                </div>
+                                                 <a href="#ventana" class="btn btn--blanco">Book now!</a>
+                                             </div>
+                                         </div>
+                                    </div>
+                                 </div>
+                            </div>
+                            </section>
+                        </div>
+                        <div class="slide-show slide-show_4">
+                           <section class="section-turismo" id="section-turismo">
+                               <div class="flex-container">
+                                <div class="flex-item--tarjetas-slider-abajo">
+                                   <div class="tarjeta">
+                                       <div class="tarjeta__lado tarjeta__lado--frente">
+                                            <div class="tarjeta__imagen tarjeta__imagen--1">
+                                                &nbsp;
+                                            </div>
+                                            <h4 class="tarjeta__encabezado">
+                                                <span class="tarjeta__encabezado-span tarjeta__encabezado-span--1">Entrantes</span>
+                                            </h4>
+                                           
+                                       </div>
+                                       <div class="tarjeta__lado tarjeta__lado--atras tarjeta__lado--atras-1">
+                                            <div class="tarjeta__cta">
+                                                <div class="tarjeta__detalles">
+                                                    <ul>
+                                                        <li>3 day tours</li>
+                                                        <li>Up to 30 people</li>
+                                                        <li>2 tour guides</li>
+                                                        <li>Sleep in cozy hotels</li>
+                                                        <li>Difficulty: easy</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#ventana" class="btn btn--blanco">Book now!</a>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
+                                <div class="flex-item--tarjetas-slider-abajo">
+                                    <div class="tarjeta">
+                                        <div class="tarjeta__lado tarjeta__lado--frente">
+                                             <div class="tarjeta__imagen tarjeta__imagen--2">
+                                                 &nbsp;
+                                             </div>
+                                             <h4 class="tarjeta__encabezado">
+                                                 <span class="tarjeta__encabezado-span tarjeta__encabezado-span--2">Ensaladas</span>
+                                             </h4>
+                                             
+                                        </div>
+                                        <div class="tarjeta__lado tarjeta__lado--atras tarjeta__lado--atras-2">
+                                             <div class="tarjeta__cta">
+                                                <div class="tarjeta__detalles">
+                                                    <ul>
+                                                        <li>3 day tours</li>
+                                                        <li>Up to 30 people</li>
+                                                        <li>2 tour guides</li>
+                                                        <li>Sleep in cozy hotels</li>
+                                                        <li>Difficulty: easy</li>
+                                                    </ul>
+                                                </div>
+                                                 <a href="#ventana" class="btn btn--blanco">Book now!</a>
+                                             </div>
+                                         </div>
+                                    </div>
+                                 </div>
+                                 <div class="flex-item--tarjetas-slider-abajo">
+                                    <div class="tarjeta">
+                                        <div class="tarjeta__lado tarjeta__lado--frente">
+                                             <div class="tarjeta__imagen tarjeta__imagen--3">
+                                                 &nbsp;
+                                             </div>
+                                             <h4 class="tarjeta__encabezado">
+                                                 <span class="tarjeta__encabezado-span tarjeta__encabezado-span--3">Pizzas</span>
+                                             </h4>
+                                             <div class="tarjeta__detalles">
+                                                 <ul>
+                                                     <li>3 day tours</li>
+                                                     <li>Up to 30 people</li>
+                                                     <li>2 tour guides</li>
+                                                     <li>Sleep in cozy hotels</li>
+                                                     <li>Difficulty: easy</li>
+                                                 </ul>
+                                             </div>
+                                        </div>
+                                        <div class="tarjeta__lado tarjeta__lado--atras tarjeta__lado--atras-3">
+                                             <div class="tarjeta__cta">
+                                                <div class="tarjeta__detalles">
+                                                    <ul>
+                                                        <li>3 day tours</li>
+                                                        <li>Up to 30 people</li>
+                                                        <li>2 tour guides</li>
+                                                        <li>Sleep in cozy hotels</li>
+                                                        <li>Difficulty: easy</li>
+                                                    </ul>
+                                                </div>
+                                                 <a href="#ventana" class="btn btn--blanco">Book now!</a>
+                                             </div>
+                                         </div>
+                                    </div>
+                                 </div>
+                            </div>
+                            </section>
+                        </div>
+                   </div>
+               </div> 
+               </div>
+               <div class="controls">
+               <label for="slide-show-1"></label>
+               <label for="slide-show-2"></label>
+               <label for="slide-show-3"></label>
+               <label for="slide-show-4"></label>
+               </div>
+               <div class="bullets">
+               <label for="slide-show-1"></label>
+               <label for="slide-show-2"></label>
+               <label for="slide-show-3"></label>
+               <label for="slide-show-4"></label>
+               </div>
+               </div>
+         </div>
+      </div>
+      <div class="flex-container">
+         <div class="flex-item flex-item--footer">
+            <footer class="pie">
+               <div class="pie__logo-caja" >
+                   <picture class="pie__logo">
+                       <source srcset="img/logo.jpg, img/logo.jpg"
+                               media="(max-width: 37.5em)">
+                       <img srcset="img/logo.png, img/logo.png" alt="Full logo" src="img/logo.png">
+                   </picture>
+               </div>
+               <div class="filas">
+                   <div class="col-1-of-2">
+                       <div class="pie__navegacion">
+                           <ul class="pie__lista">
+                               <li class="pie__item"><a href="#" class="pie__link">Company</a></li>
+                               <li class="pie__item"><a href="#" class="pie__link">Contact us</a></li>
+                               <li class="pie__item"><a href="#" class="pie__link">Carrers</a></li>
+                               <li class="pie__item"><a href="#" class="pie__link">Privacy policy</a></li>
+                               
+                           </ul>
+                       </div>
+                   </div>
+                   <div class="col-1-of-2">
+                       <p class="pie__copyright">
+                           Built by <a href="#" class="pie__link">Alejandro Pacios</a> 
+                           <a href="#" class="pie__link">Recetas de Cocina</a>.
+                           Copyright &copy; by Alejandro Pacios
+                       </p>
+                   </div>
+               </div>
+           </footer>
+         </div>
+      </div>
+      <script src="js/imprimir.js"></script>
+     
+      <script src="js/buscador.js"></script>
+   </body>
+</html>
